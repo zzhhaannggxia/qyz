@@ -1,0 +1,517 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "苹方";
+}
+a{
+    text-decoration: none;
+}
+i{
+    font-style: normal;
+}
+a:hover{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 264px;
+    /* 	background-color: green; */
+    background-image: url('../img/dl.jpg');
+    background-position: center 20px ;
+    background-size: cover;
+    overflow: hidden;
+}
+header .pad{
+    width: 100%;
+    height: 92px;
+    /* padding:0  150px; */
+    /* background-color: red; */
+    position: relative;
+}
+header .zz{
+    width: 100%;
+    height: 264px;
+    background:rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+}
+header .pad img{
+    width: 159px;
+    height: 64px;
+    /* position: absolute;
+    bottom: 15px;
+    left: 150px; */
+    margin-left: 150px;
+    margin-top: 15px;
+}
+header .pad .mid{
+    float: left;
+    height: 28px;
+    /* width: 910px; */
+    /* background:yellow; */
+    margin-left: 311px;
+    position: absolute;
+    bottom:22px;
+
+}
+header .pad .mid ul li{
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 28px;
+    float: left;
+    margin-left: 50px;
+    cursor: pointer;
+
+}
+header .pad .rig{
+    width: 150px;
+    height: 28px;
+    /* background-color: pink; */
+    float: right;
+    margin-top: 46px;
+    color: #ffffff;
+    font-size: 14px;
+    position: relative;
+    margin-right: 160px;
+    /* padding: 0 20px; */
+}
+header .pad .rig .pic1{
+    width: 18px;
+    height:18px;
+    background-image: url('../img/dl.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 2px;
+    left: 40px;
+}
+header .pad .rig .pic2{
+    width: 16px;
+    height:16px;
+    background-image: url('../img/zc.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 2px;
+    right:30px;
+}
+header .pad .rig ul li{
+    float: right;
+    margin-left: 18px;
+    cursor: pointer;
+
+}
+header .pad .rig ul li a{
+    color: #ffffff;
+}
+header .pad .mid ul li a{
+    color: #ffffff;
+}
+header .yc{
+    width: 100%;
+    height: 44px;
+    background-color:#e04f67;
+    font-size: 14px;
+    text-align: center;
+    line-height: 44px;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+
+}
+header .pad{
+    display: none;
+}
+header .wenzi1{
+        width: 100%;
+        height: 42px;
+      /*   background: red; */
+        font-size:20px;
+        color: white;
+        text-align: center;
+        margin-top: 130px;
+
+}
+header .wenzi2{
+    width: 100%;
+    height: 34px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 34px;
+    color: #fff;
+}
+.join{
+    width: 518px;
+    height:450px;
+    /*background-color: brown;*/
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid #eeeeee;
+    padding:15px;
+    position: relative;
+}
+.join .line1{
+    width: 470px;
+    height: 1px;
+    background-color: #eeeeee;
+    position: absolute;
+    top: 290px;
+    left: 20px;
+}
+.join .line2{
+    width: 470px;
+    height: 1px;
+    background-color: #eeeeee;
+    position: absolute;
+    top: 345px;
+    left: 20px;
+}
+.join .secrt {
+    width: 100%;
+    height: 65px;
+     /*background-color: pink;*/
+    /*padding-right: 8px;*/
+    /*padding-top: 2px;*/
+    /* padding-bottom: 31px; */
+    position: relative;
+}
+.join .secrt input{
+    width: 284px;
+    height: 30px;
+    line-height: 80px;
+    font-size: 13px;
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+    /*padding-left: 8px;*/
+    /*position: relative;*/
+}
+.join .secrt .aaa{
+    width: 18px;
+    height: 18px;
+    margin-top: 20px;
+
+}
+.join .secrt  a{
+    color:#88888b;
+}
+
+.join .secrt  i{
+    font-size: 14px;
+    color: #888888;
+    position: absolute;
+    bottom:27px;
+    left: 22px;
+
+}
+.join .then{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.join .then .one{
+    width: 100%;
+    height: 40px;
+    /*background-color: pink;*/
+    margin-top: 10px;
+
+}
+.join .then .one .fox1{
+    width: 56px;
+    height: 30px;
+    /*border: 1px solid #eeeeee;*/
+    background-color: #e04f67;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height:30px;
+    border-radius: 3px;
+    float: left;
+}
+.join .then .one .fox1 a{
+    color: white;
+}
+.join .then .one .fox1 a:hover{
+    text-decoration: none;
+}
+.join .then .one .fox2{
+    width: 214px;
+    height: 32px;
+    border: 1px solid #e05f70;
+    float: right;
+    border-radius: 3px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 32px;
+}
+.join .then .one .fox2 a{
+    color:#e05f70;
+}
+.join .two{
+    width: 100%;
+    height: 40px;
+    /*background-color: yellow;*/
+    font-size: 13px;
+    color: #888888;
+    position: relative;
+    margin-top: 10px;
+}
+.join .two .first{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 75px;
+    top: 0;
+    background-image: url('../img/tubiao2.png');
+    /* background-size: -50px 50px; */
+    background-position: -49px -48px;
+
+}
+.join .two .second{
+    width: 24px;
+    height: 24px;
+    /* background-color: green; */
+    /* float: left; */
+    position: absolute;
+    top: 0;
+    left: 105px;
+    background-image: url('../img/tubiao2.png');
+    background-position: 0 -48px;
+
+}
+.join ul li{
+    width: 100%;
+    height: 42px;
+    /*background-color: pink;*/
+    margin-bottom: 5px;
+    position: relative;
+}
+.join ul li h5{
+    color: #333;
+    font-size: 14px;
+    line-height: 35px;
+    cursor: pointer;
+}
+.join ul li h5 i{
+    color: red;
+}
+.join ul li input{
+    width: 310px;
+    height: 35px;
+    /*line-height: 80px;*/
+    font-size: 13px;
+    background-color: #f5f5f5;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding:0 8px;
+}
+.join ul li h6{
+    color: #888;
+    font-size: 14px;
+    margin-left: 178px;
+}
+.join ul li .line{
+    width: 180px;
+    height: 7px;
+    border:1px solid #dee5ec;
+    background-color: #dddddd;
+    margin-left: 178px;
+}
+.tex{
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 42px;
+}
+.text span{
+    color: rgb(102, 102, 102);
+    font-size: 16px;
+    font-weight: 700;
+}
+.tex h6{
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    /* line-height: 1.6px; */
+    line-height: 20px;
+}
+.tex h6 i{
+    color: red;
+}
+.tex h5{
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+     line-height: 20px;
+}
+.tex h5 i{
+    color: red;
+}
+.tex h4{
+    color: red;
+    font-size: 14px;
+    /* line-height: 1.6px; */
+}
+footer{
+    width: 100%;
+    height: 182px;
+    /* background-color: pink; */
+    margin-top: 100px;
+    padding: 0 10px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+footer ul li{
+    width: 195px;
+    height: 158px;
+    /* background-color: orange; */
+    /*margin-right: 10px;*/
+    /*float: left;*/
+    padding-left: 20px;
+    margin-top: 20px;
+}
+footer ul li:nth-child(1){
+    height: 58px;
+
+}
+footer ul li:nth-child(1) span{
+    color: #808080;
+    font-size: 20px;
+    font-weight: 700;
+}
+footer ul li:nth-child(1) h6{
+    color: #A9A9A9;
+    font-size: 14px;
+    font-weight: 700;
+}
+footer ul li dt{
+    color: #808080;
+    font-size: 100%;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+footer ul li dd{
+    color:#A9A9A9;
+    font-size: 13px;
+    margin-bottom: 8px;
+
+}
+footer ul li:nth-child(3){
+    padding-top: 50px;
+}
+footer ul li:nth-child(4){
+    color: #808080;
+    /* font-size: 16px; */
+}
+footer ul li:nth-child(4) h6{
+    font-size: 14px;
+}
+footer ul li:nth-child(4) img{
+    width: 112px;
+    height: 112px;
+    margin-top: 20px;
+}
+footer ul li:nth-child(5){
+    width: 100%;
+    /* margin: 0 auto; */
+    padding-top: 20px;
+    /*padding-left: 368px;*/
+    height: 68px;
+}
+footer ul li:nth-child(5) .con{
+    width: 130px;
+    height: 30px;
+    margin: 0 auto;
+}
+footer ul li:nth-child(5) dd{
+    width: 24px;
+    height: 24px;
+    /* background-color: yellow; */
+    float: left;
+    margin-right: 8px;
+}
+footer ul li:nth-child(5) .section1{
+    background-image: url('../img/tubiao2.png');
+    background-position: -96px -48px;
+
+}
+footer ul li:nth-child(5) .section2{
+    background-image: url('../img/tubiao2.png');
+    background-position: -192px -48px;
+
+}
+footer ul li:nth-child(5) .section3{
+    background-image: url('../img/tubiao2.png');
+    background-position: -240px -48px;
+
+}
+footer ul li:nth-child(5) .section4{
+    background-image: url('../img/tubiao2.png');
+    background-position: -120px -48px;
+
+}
+@media screen and (min-width: 768px){
+
+}
+@media screen and (min-width: 992px){
+    header .yc{
+        display: none;
+    }
+    header{
+        height: 420px;
+        background-image: url('../img/dl.jpg');
+        background-position: center ;
+        background-size: cover;
+    }
+    header .pad{
+        display: inline;
+        float: left;
+
+    }
+     header .zz{
+        height: 420px;
+    }
+      header .wenzi1{
+        width: 100%;
+        height: 48px;
+        font-size:36px;
+        color: #fff;
+        text-align: center;
+        margin-top: 190px;
+
+    }
+    header .wenzi2{
+        height: 34px;
+    }
+    .tex{
+        width: 510px;
+    }
+    footer{
+        margin-top: 60px;
+       padding:0 290px;
+    }
+    footer ul li{
+       float: left;
+    }
+    footer ul li:nth-child(1){
+        height: 158px;
+    }
+    footer ul li:nth-child(5){
+        width:158px;
+        padding-left: 0;
+    }
+
+}
+@media screen and (min-width: 1200px){
+
+}

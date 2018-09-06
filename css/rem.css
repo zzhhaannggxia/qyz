@@ -1,0 +1,35 @@
+@media screen and (min-width: 360px){
+			html{
+				font-size: calc(360/750*100px);
+			}
+}
+@media screen and (min-width: 375px){
+			html{
+				font-size:50px;
+			}
+}
+@media screen and (min-width: 412px){
+			html{
+				font-size: 55px;
+			}
+}
+@media screen and (min-width: 414px){
+			html{
+				font-size: calc(414/750*100px);
+			}
+}
+@media screen and (min-width: 750px){
+			html{
+				font-size: 100px;
+			}
+}
+@media screen and (min-width: 768px){
+			html{
+				font-size: 102px;
+			}
+}
+@media screen and (min-width: 1024px){
+			html{
+				font-size: calc(1024/750*100px);
+			}
+}
