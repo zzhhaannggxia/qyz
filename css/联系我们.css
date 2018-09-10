@@ -2,7 +2,7 @@
 * @Author: 18634746074
 * @Date:   2018-09-02 16:26:50
 * @Last Modified by:   18634746074
-* @Last Modified time: 2018-09-06 18:54:16
+* @Last Modified time: 2018-09-08 16:44:15
 */
 *{
     padding: 0;
@@ -117,6 +117,12 @@ header .pad .rig ul li a{
 header .pad .mid ul li a{
     color: #ffffff;
 }
+header .pad .mid ul li a:hover{
+    color: rgb(242, 117, 103);
+}
+header .pad .rig ul li a:hover{
+    color: rgb(242, 117, 103);
+}
 header .yc{
     width: 100%;
     height: 44px;
@@ -162,17 +168,20 @@ header .wenzi2{
 	width: 768px;
 	/* background-color: yellow; */
 	margin: 0 auto;
+  
 }
-.dt .box .map{
+.dt .box .mapp{
 	width: 100%;
 	height: 425px;
 	/* background-color: red; */
-	background-image: url('../img/lxwmmap.png');
-	background-position: center;
-	background-size: cover;
+	/* background-image: url('../img/lxwmmap.png'); */
+	/* background-position: center;
+	background-size: cover; */
+  
 }
 .dt .box .write{
 	width: 100%;
+
 }
 .dt .box .write .wenzi1{
 	width: 100%;
@@ -263,12 +272,16 @@ footer ul li dt{
     font-size: 100%;
     margin-top: 5px;
     margin-bottom: 25px;
+    cursor: pointer;
 }
 footer ul li dd{
     color:#A9A9A9;
     font-size: 13px;
     margin-bottom: 8px;
-
+    cursor: pointer;
+}
+footer ul li dd:hover{
+    color: #ff6700;
 }
 footer ul li:nth-child(3){
     padding-top: 50px;
@@ -324,6 +337,38 @@ footer ul li:nth-child(5) .section4{
     background-position: -120px -48px;
 
 }
+.fix{
+    width: 54px;
+    height: 270px;
+    background: #9b9b9b;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 999;
+}
+.fix ul li{
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    line-height: 54px;
+    cursor: pointer;
+}
+/* .fix ul li:nth-child(1){
+    background-image: url('../img/back.png');
+    background-size: cover;
+    background-position: 35px 32px;
+} */
+.fix ul li:hover{
+    background:rgb(242, 117, 103);
+}
+.fix ul li:nth-child(3){
+    background-color: rgb(242, 117, 103);
+}
+.fix ul li i{
+   
+    font-size: 30px;
+    color: white;
+}
 @media screen and (min-width: 768px){
 }
 @media screen and (min-width: 992px){
@@ -368,13 +413,14 @@ footer ul li:nth-child(5) .section4{
 	overflow: hidden;
 	padding-bottom: 100px;
 	padding-top: 50px;
+    display: flex;
 }
-.dt .box .map{
+.dt .box .mapp{
 	width: 642px;
 	float: left;
-	background-image: url('../img/lxwmmap1.png');
+	/* background-image: url('../img/lxwmmap1.png');
 	background-position: center;
-	background-size: cover;
+	background-size: cover; */
 }
 .dt .box .write{
 	width: 382px;

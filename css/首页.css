@@ -43,6 +43,20 @@ header .cover .yc{
     z-index: 500;
    
 }
+header .cover .xl{
+    width: 100%;
+    height: 308px;
+    display: none;
+}
+header .cover .xl ul li{
+    width: 100%;
+    height: 44px;
+    background-color:#e04f67;
+     font-size: 14px;
+    text-align: center;
+    line-height: 44px;
+    color: #ffffff;
+}
 header .cover .pad{
     width: 100%;
     height: 92px;
@@ -79,6 +93,9 @@ header  .cover .pad .mid ul li{
     margin-left: 50px;
     cursor: pointer;
 
+}
+header  .cover .pad .mid ul li a:hover{
+    color: rgb(242, 117, 103);
 }
 header .cover  .pad .rig{
     width: 150px;
@@ -121,6 +138,9 @@ header .cover .pad .rig ul li a{
 }
 header .cover .pad .mid ul li a{
     color: #ffffff;
+}
+header  .cover .pad .rig ul li a:hover{
+    color: rgb(242, 117, 103);
 }
 header .cover .pad{
     display: none;
@@ -180,14 +200,20 @@ header .cover .box2 .box3{
     text-align: center;
     line-height: 40px;
     font-weight: 700;
+    cursor: pointer;
    
+}
+header .cover .box2 .box3:hover{
+    background: #ddd;
 }
 article{
     width: 100%;
     height: 184px;
     background-color: #f7f7f7;
     padding-top:40px;
+    position: relative;
 }
+
 article .section{
     width: 740px;
     height: 38px;
@@ -196,18 +222,45 @@ article .section{
     color: #696969;
     font-weight: 700;
     line-height:38px;
+  /*   position: absolute;
+    top: 84px;
+    left: 200px; */
     
 }
-article input{
-    width: 350px;
+article .sr{
+    width: 385px;
     height: 40px;
-    border: 1px solid #dbdbdb;
+    /* border: 1px solid #dbdbdb; */
+    /* background: red; */
+    float: right;
+    position: absolute;
+    top: 84px;
+    right: 0px;
+
+}
+article .sr input{
+    width: 350px;
+    height: 100%;
     color: #bfbfbf;
     font-size: 14px;
     padding:6px 10px 5px ;
     background-color: #fff;
-    float: right;
-
+    float: left;
+    outline: none;
+}
+article .sr .ss{
+    width: 33px;
+    height: 40px;
+    background: #dbdbdb;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    cursor: pointer;
+}
+article .sr .ss:hover{
+    color: #dbdbdb;
+    background: #e04f67;
 }
 .section1{
     width: 100%;
@@ -274,11 +327,21 @@ article input{
 }
 .contant{
     width: 100%;
+    height: 758px;
     padding: 0 55px;
     display: block;
     background-color:#f7f7f7;
     overflow: hidden;
+    position: relative;
+
   
+}
+.contant ul{
+    /* opacity: 0; */
+    z-index: 1;
+    position: absolute;
+     top: 0;
+    left: 0;
 }
 .contant ul li{
     height: 333px;
@@ -288,6 +351,9 @@ article input{
     box-shadow: 0px 1px 20px 0px #f1efef;
     position: relative;
     cursor: pointer;
+
+
+    
 }
 .contant ul li:nth-child(6){
     margin-bottom: 0;
@@ -369,6 +435,7 @@ article input{
     font-size: 15px;
     color: white;
     margin-top: 22px;
+    cursor: pointer;
 }
 .back1{
     width: 100%;
@@ -398,6 +465,10 @@ article input{
     right: 0;
     margin: 0 auto;
     text-align: center;
+    cursor: pointer;
+}
+.back1 .wenzi1:hover{
+    color: #e04f67;
 }
 .line{
     width: 100%;
@@ -468,6 +539,7 @@ article input{
     /* background: blue; */
     font-size: 14px;
     color: #A9A9A9;
+    cursor:pointer;
 }
 
 .tep ul li .lg .box4{
@@ -525,6 +597,10 @@ article input{
     right: 0;
     margin: 0 auto;
     text-align: center;
+    cursor: pointer;
+}
+.back2 .wenzi1:hover{
+    color:#e04f67; 
 }
 .cont{
     width: 100%;
@@ -567,7 +643,7 @@ article input{
     width: 100%;
     height: 46px;
     padding-top: 22px;
-    padding-left: 70px;
+    padding-left: 100px;
 }
 .cont ul li .ty .ty2 .zz{
     width: 50px;
@@ -592,6 +668,10 @@ article input{
         color: rgb(128, 128, 128);
         font-size: 12px;
         line-height: 25px;
+        cursor: pointer;
+}
+.cont ul li .ty .ty3:hover{
+    color: rgb(245, 134, 101);
 }
 .cont ul li .ty .box{
     width: 155px;
@@ -640,7 +720,7 @@ article input{
     font-size: 22px;
     color: rgb(51, 51, 51);
     float: left;
-
+    cursor: pointer;
 }
 .screen .box2 .box3 .box6{
     color: rgb(224, 79, 103);
@@ -657,6 +737,7 @@ article input{
     height: 102px;
    padding-top: 20px;
    padding-bottom: 10px;
+   cursor: pointer;
 
 }
 .screen .box2 .box5{
@@ -697,6 +778,7 @@ footer ul li{
 }
 footer ul li:nth-child(1){
     height: 58px;
+    cursor: pointer;
 
 }
 footer ul li:nth-child(1) span{
@@ -708,18 +790,23 @@ footer ul li:nth-child(1) h6{
     color: #A9A9A9;
     font-size: 14px;
     font-weight: 700;
+    cursor: pointer;
 }
 footer ul li dt{
     color: #808080;
     font-size: 100%;
     margin-top: 5px;
     margin-bottom: 25px;
+    cursor: pointer;
 }
 footer ul li dd{
     color:#A9A9A9;
     font-size: 13px;
     margin-bottom: 8px;
-
+    cursor: pointer;
+}
+footer ul li dd:hover{
+    color: rgb(245, 134, 101);
 }
 footer ul li:nth-child(3){
     padding-top: 50px;
@@ -730,6 +817,7 @@ footer ul li:nth-child(4){
 }
 footer ul li:nth-child(4) h6{
     font-size: 14px;
+    cursor: pointer;
 }
 footer ul li:nth-child(4) img{
     width: 112px;
@@ -782,6 +870,7 @@ footer ul li:nth-child(5) .section4{
     position: fixed;
     right: 0;
     top: 50%;
+    z-index: 999;
 }
 .fix ul li{
     width: 54px;
@@ -797,6 +886,9 @@ footer ul li:nth-child(5) .section4{
 } */
 .fix ul li:hover{
     background:rgb(242, 117, 103);
+}
+.fix ul li:nth-child(3){
+    background-color: rgb(242, 117, 103);
 }
 .fix ul li i{
    
@@ -870,13 +962,26 @@ article{
     article .section{
         width: 261px;
         position: absolute;
-        left: 210px;
-        top: 40px;
+        left: 200px;
+        top: 84px;
         text-align: center;
     }
-    article input{
-        margin-right: 200px;
-    }
+   
+    article .sr{
+    width: 390px;
+    height: 40px;
+    /* border: 1px solid #dbdbdb; */
+    /* background: red; */
+    position: absolute;
+    top: 84px;
+    right: 200px;
+
+}
+article .ss{
+    width: 30px;
+    float: left;
+}
+
     .con{
         height: 54px;
     }

@@ -3,10 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1,user-scalable=no" >
-	<title>旅游套餐</title>
+	<title>巴黎旅游-旅游套餐</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/旅游套餐.css">
+     <link rel="stylesheet" href="https://at.alicdn.com/t/font_795508_n65vdiuv56r.css">
+      <link rel="shortcut icon" href="img/qfy.png">
+     <script src="animate.js"></script>
 </head>
 <body>
 <header>
@@ -18,6 +21,7 @@
         <div class="mid">
             <ul>
                 <li><a href="首页.html">首页</a></li>
+                  <li><a href="热门景点.html">热门景点</a></li>
                 <li><a href="旅游套餐.html">旅游套餐</a></li>
                 <li><a href="关于我们.html">关于我们</a></li>
                 <li><a href="客户反馈.html">客户反馈</a></li>
@@ -89,16 +93,16 @@
 		</div>
 		<div class="right">
 			<div class="box">
-				<img src="img/map2.PNG" alt="" >
+				<iframe src="map.html" width="768" height="250" frameborder="0" scrolling="no" class="mapp"></iframe>      
 				<div class="box1">在线预订</div>
 				<ul >
 					<li class="box3">
 						您的姓名:
-						<input type="text">
+						<input type="text" placeholder="请输入姓名">
 					</li>
 					<li>
 						您的电话:
-						<input type="text">
+						<input type="text" placeholder="请输入手机号" >
 					</li>
 					<li>
 					目的地:
@@ -140,6 +144,7 @@
 		</div>
 </div>
 </main>
+
  <footer>
         <ul>
             <li>
@@ -175,7 +180,22 @@
             </li>
         </ul>
     </footer>
-
+	 <div class="fix">
+        <ul>
+            <li ><i class="iconfont icon-dianhua"></i></li>
+            <li><i class="iconfont icon-qq"></i></li>
+            <li><i class="iconfont icon-weixin"></i></li>
+            <li><i class="iconfont icon-weibo"></i></li>
+            <li><i class="abc iconfont icon-shangyi"></i></li>
+        </ul>
+    </div>
+    <script>
+        let tt=document.querySelector(".fix ul li .abc");
+        console.log(tt);
+        tt.onclick=function(){
+            animate(document.body,{scrollTop:0},500);
+        }
+    </script>
 
 </body>
 </html>

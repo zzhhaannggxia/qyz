@@ -3,10 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1,user-scalable=no" >
-	<title>登录</title>
+	<title>巴黎旅游-登录</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/登录.css">
+	 <link rel="stylesheet" href="swiper-4.3.5.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_795508_n65vdiuv56r.css">
+    <link rel="shortcut icon" href="img/qfy.png">
+    <script src="swiper-4.3.5.min.js"></script>
+    <script src="animate.js"></script>
 </head>
 <body>
 	<header>
@@ -17,7 +22,8 @@
 			<img src="img/logo.png" alt="">
 			<div class="mid">
 				<ul>
-					<li><a href="首页.html">首页</a></li>					
+					<li><a href="首页.html">首页</a></li>	
+						<li><a href="热门景点.html">热门景点</a></li>					
 					<li><a href="旅游套餐.html">旅游套餐</a></li>
 					<li><a href="关于我们.html">关于我们</a></li>
 					<li><a href="客户反馈.html">客户反馈</a></li>
@@ -47,10 +53,10 @@
 			</div>
 			<div class="right">
 				<div class="one">
-					<input type="text">
+					<input type="text" placeholder="请输入用户名" class="username">
 				</div>
 				<div class="two">
-					<input type="password">
+					<input type="password" placeholder="请输入密码" class="password">
 					<input type="checkbox" name="job" class="aaa" ><a href=""><i>记住我(请在私人计算机上使用此功能)</i></a>
 				</div>
 			</div>
@@ -69,6 +75,7 @@
 		</div>
 		<div class="line"></div>
 	</div>
+	
 	<div class="tex">
 		<span>温馨提示：</span>
 		<h6>1、实际使用之前，需配置用户管理组件中的相关邮件。详情请参考教程：<a href=""><i>《用户管理中相关邮件的配置》</i></a></h6>
@@ -110,5 +117,37 @@
 			</li>
 		</ul>
 	</footer>
+	  <div class="fix">
+        <ul>
+            <li ><i class="iconfont icon-dianhua"></i></li>
+            <li><i class="iconfont icon-qq"></i></li>
+            <li><i class="iconfont icon-weixin"></i></li>
+            <li><i class="iconfont icon-weibo"></i></li>
+            <li><i class="abc iconfont icon-shangyi"></i></li>
+        </ul>
+    </div>
+    <script>
+        let tt=document.querySelector(".fix ul li .abc");
+        console.log(tt);
+        tt.onclick=function(){
+            animate(document.body,{scrollTop:0},500);
+        }
+    </script>
 </body>
 </html>
+<script>
+	window.onload=function(){
+    let user=document.querySelector(".join .right .one .username");
+    let pass=document.querySelector(".join .right .two .password");
+    let btn=document.querySelector(".then .one .fox1");
+    console.log(user,pass,btn);
+    btn.onclick=function(){
+        if(user.value=="巴黎旅游" && pass.value=="123456"){
+            alert("登录成功");
+            window.open("首页.html");
+        }else{
+            window.open("error.html");
+        	}
+    	}
+  }
+	</script>

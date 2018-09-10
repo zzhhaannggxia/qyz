@@ -3,11 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width initial-scale=1.0, maximum-scale=1,user-scalable=no" >
-	<title>客户反馈</title>
+	<title>巴黎旅游-客户反馈</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/客户反馈.css">
-    <script src="../animate.js"></script>
+     <link rel="stylesheet" href="swiper-4.3.5.min.css">
+      <link rel="stylesheet" href="https://at.alicdn.com/t/font_795508_n65vdiuv56r.css">
+    <link rel="shortcut icon" href="img/qfy.png">
+    <script src="animate.js"></script>
+     <script src="swiper-4.3.5.min.js"></script>
 </head>
 <body>
 <header>
@@ -18,6 +22,7 @@
         <div class="mid">
             <ul>
                 <li><a href="首页.html">首页</a></li>
+                <li><a href="热门景点.html">热门景点</a></li>
                 <li><a href="旅游套餐.html">旅游套餐</a></li>
                 <li><a href="关于我们.html">关于我们</a></li>
                 <li><a href="客户反馈.html">客户反馈</a></li>
@@ -41,6 +46,59 @@
 </header>
 <div class="lunbo">
 	<div class="only">
+		<div class="swiper-container">
+   		 <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        	<div class="leftn">
+					<img src="img/khfk1.jpg" alt="" width="164px" height="150px">
+				</div>
+				<div class="rightn">
+					<div class="wenzi1">客户名称</div>
+					<span>vip1级</span>
+					<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事，当今最领先的响应式自助建站平台。</p>
+				</div>
+        </div>
+        <div class="swiper-slide">
+        	<div class="leftn">
+					<img src="img/khfk2.jpg" alt="" width="164px" height="150px">
+				</div>
+				<div class="rightn">
+					<div class="wenzi1">客户名称</div>
+					<span>vip1级</span>
+					<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事，当今最领先的响应式自助建站平台。</p>
+				</div>
+        </div>
+        <div class="swiper-slide">
+        	<div class="leftn">
+					<img src="img/khfk3.jpg" alt="" width="164px" height="150px">
+				</div>
+				<div class="rightn">
+					<div class="wenzi1">客户名称</div>
+					<span>vip1级</span>
+					<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事，当今最领先的响应式自助建站平台。</p>
+				</div>
+        </div>
+        <div class="swiper-slide">
+        	<div class="leftn">
+					<img src="img/khfk4.jpg" alt="" width="164px" height="150px">
+				</div>
+				<div class="rightn">
+					<div class="wenzi1">客户名称</div>
+					<span>vip1级</span>
+					<p>当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事，当今最领先的响应式自助建站平台。</p>
+				</div>
+        </div>
+    </div>
+    <!-- 如果需要分页器 -->
+   <!--  <div class="swiper-pagination"></div> -->
+    
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    <!-- 如果需要滚动条 -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+	</div>
 		<div class="box">
 			<div class="box1">
 				<div class="leftn">
@@ -85,10 +143,96 @@
 			
 		</div>
 		
-		<div class="left"><</div>
-		<div class="right">></div>
+	<!-- 	<div class="left"><</div>
+		<div class="right">></div> -->
 	</div>
 </div>
+ <script>
+	// let section=document.querySelectorAll(".lunbo .box1");
+	// // let dots=document.querySelectorAll("li");
+	// let left=document.querySelectorAll(".left");
+	// let right=document.querySelectorAll(".right");
+	// let width=parseInt(getComputedStyle(section[0],null).width);
+	// let yellow=document.querySelectorAll(".only")[0];
+	// console.log(section,left,right,width);
+	// section[0].style.left=0;
+	// // dots[0].classList.add("active");
+	// let now=0;
+	// let next=0;
+	// let t=setInterval(move,2000);
+	// function move(){
+	// 	next++;
+	// 	if(next==section.length){
+	// 		next=0;
+	// 	}
+	// 	section[next].style.left=width+"px";
+	// 	animate(section[now],{left:-width});
+	// 	animate(section[next],{left:0});
+	// 	now=next;
+	// }
+
+
+	// function movel(){
+	// 	next--;
+	// 	if(next==-1){
+	// 		next=section.length-1;
+	// 	}
+	// 	section[next].style.left=-width+"px";
+	// 	animate(section[now],{left:width});
+	// 	animate(section[next],{left:0});
+	// 	now=next;
+	// }
+		
+	// left.onclick=function(){
+	// 	movel()
+	// }
+	// right.onclick=function(){
+	// 	move()
+	// }
+
+	// yellow.onmouseover=function(){
+	// 		clearInterval(t);
+	// 	}
+	// yellow.onmouseout=function(){
+	// 		t=setInterval(move,2000);
+	// 	}
+
+	// window.onblur=function(){
+	// 	clearInterval(t);
+	// }
+	// //窗口获得焦点时，继续时间间隔函数
+	// window.onfocus=function(){
+	// 	t=setInterval(move,2000);
+	// }
+	
+	 var mySwiper = new Swiper ('.swiper-container', {
+   		 direction: 'horizontal',
+    	 loop: true,
+    
+    // 如果需要分页器
+   		 pagination: {
+      	 el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+         navigation: {
+      	 nextEl: '.swiper-button-next',
+      	 prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+     speed:300,
+  	autoplay : {
+    delay:3000
+  },
+ effect : 'coverflow',
+slidesPerView: 3,
+centeredSlides: true,
+  })        
+</script>
 <div class="picture">
 	<div class="box">
 		<ul>
@@ -148,63 +292,21 @@
             </li>
         </ul>
     </footer>
+     <div class="fix">
+        <ul>
+            <li ><i class="iconfont icon-dianhua"></i></li>
+            <li><i class="iconfont icon-qq"></i></li>
+            <li><i class="iconfont icon-weixin"></i></li>
+            <li><i class="iconfont icon-weibo"></i></li>
+            <li><i class="abc iconfont icon-shangyi"></i></li>
+        </ul>
+    </div>
+    <script>
+        let tt=document.querySelector(".fix ul li .abc");
+        console.log(tt);
+        tt.onclick=function(){
+            animate(document.body,{scrollTop:0},200);
+        }
+    </script>
 </body>
 </html>
- <script>
-	let section=document.querySelectorAll(".box1");
-	// let dots=document.querySelectorAll("li");
-	let left=document.querySelectorAll(".left")[0];
-	let right=document.querySelectorAll(".right")[0];
-	let width=parseInt(getComputedStyle(section[0],null).width);
-	let yellow=document.querySelectorAll(".only")[0];
-	console.log(section,left,right,width,yellow);
-	section[0].style.left=0;
-	// dots[0].classList.add("active");
-	let now=0;
-	let next=0;
-	let t=setInterval(move,2000);
-	function move(){
-		next++;
-		if(next==section.length){
-			next=0;
-		}
-		section[next].style.left=width+"px";
-		animate(section[now],{left:-width});
-		animate(section[next],{left:0});
-		now=next;
-	}
-
-
-	function movel(){
-		next--;
-		if(next==-1){
-			next=section.length-1;
-		}
-		section[next].style.left=-width+"px";
-		animate(section[now],{left:width});
-		animate(section[next],{left:0});
-		now=next;
-	}
-		
-	left.onclick=function(){
-		movel()
-	}
-	right.onclick=function(){
-		move()
-	}
-
-	yellow.onmouseover=function(){
-			clearInterval(t);
-		}
-	yellow.onmouseout=function(){
-			t=setInterval(move,2000);
-		}
-
-	window.onblur=function(){
-		clearInterval(t);
-	}
-	//窗口获得焦点时，继续时间间隔函数
-	window.onfocus=function(){
-		t=setInterval(move,2000);
-	}
-</script>
